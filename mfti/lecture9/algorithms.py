@@ -1,17 +1,3 @@
-def mergeSort(a):
-    if len(a) <= 1:
-        return 
-
-    middle = len(a) // 2
-    l = [a for i in range(0, middle)]
-    r = [a for i in range(middle, len(a))]
-    mergeSort(l)
-    mergeSort(r)
-    res = merge(l, r)
-    for i in range(len(res)):
-        a[i] = res[i]
-    
-
 # Сортировка Тони Хора QuickSort
 
 def tony(a):
